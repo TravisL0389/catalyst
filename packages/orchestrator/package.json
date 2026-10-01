@@ -1,0 +1,28 @@
+{
+  "name": "@catalyst/orchestrator",
+  "version": "0.1.0",
+  "private": true,
+  "description": "CΛTΛLYΣT Core orchestration layer.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "dependencies": {
+    "@catalyst/core": "workspace:*",
+    "@catalyst/events": "workspace:*",
+    "@catalyst/memory": "workspace:*",
+    "@catalyst/model-router": "workspace:*",
+    "@catalyst/session": "workspace:*",
+    "@catalyst/task-state": "workspace:*",
+    "@catalyst/world-model": "workspace:*"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  }
+}

@@ -1,0 +1,17 @@
+export type EventType =
+  | "object-observed"
+  | "object-added"
+  | "object-moved"
+  | "object-removed"
+  | "object-changed"
+  | "world-model-updated"
+  | "snapshot-created"
+  | "user-identified"
+  | "constraint-created"
+  | "constraint-updated"
+  | "simulation-created"
+  | "memory-created"
+  | "action-approved"
+  | "action-executed"
+  | "action-verified"
+  | "observation-corrected";
